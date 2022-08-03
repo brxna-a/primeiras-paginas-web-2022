@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 9000px;
+}
+
+.caixa{
+    background: #9932CC;
+    padding: 15px 0px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    width: 940px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+
+.header h2{
+    font-size: 27px;
+    color: #F5F5F5;
+    position: absolute;
+    top: 45px;
+    left: 100px;
+}
+
+.header img{
+    width: 100px;
+}
+
+.menu{
+    position: absolute;
+    top: 150px;
+    margin: 0 auto;
+}
+
+.menu li{ 
+    display: inline; 
+    margin: 0 0 0 0px; /*mudar*/ 
+} 
+ 
+.menu a{ 
+    color: black; 
+    font-size: 22px; 
+}
