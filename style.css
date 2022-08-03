@@ -1,23 +1,15 @@
 body{
-    margin: 0;
-    box-sizing: border-box;
-    height: 9000px;
+    height: 5000px;
 }
 
-.caixa{
-    background: #9932CC;
-    padding: 15px 0px;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
+/*cabeçalho com a logo e o título*/
+header{
+    position: sticky;
+    top: 0;
 }
 
 .header{
-    position: relative;
-    width: 940px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 25px;
+    background: #9932CC;
 }
 
 .header h2{
@@ -30,20 +22,44 @@ body{
 
 .header img{
     width: 100px;
+    padding: 12px 0px 8px 10px;
 }
 
+/*menu com as categorias*/
 .menu{
-    position: absolute;
-    top: 150px;
-    margin: 0 auto;
+    top: 123px;
+    background:#BA55D3;
 }
 
 .menu li{ 
-    display: inline; 
-    margin: 0 0 0 0px; /*mudar*/ 
+    display: inline;
+    text-align: center;
 } 
  
-.menu a{ 
+.menu button{
+    background-color:#BA55D3;
+    border: none;
     color: black; 
-    font-size: 22px; 
+    font-size: 18px; 
+    padding: 7px 13px;
+}
+
+/**/
+body, main{
+    background-color: #E6E6FA;
+}
+
+.receitas{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.receitas li{
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.foto-receita{
+    width: 30%;
 }
