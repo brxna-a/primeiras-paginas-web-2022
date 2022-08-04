@@ -65,7 +65,7 @@ body, main{
     padding: 50px;
 }
 
-.receitas li{
+.receitas div{
     display: inline-block;
     text-align: center;
     padding-top: 50px;
@@ -82,7 +82,7 @@ body, main{
     padding: 5px;
 }
 
-.favorito::before{
+.like::before{
     margin-left: 0px;
     padding: 5px;
     content: '🤍' ;
