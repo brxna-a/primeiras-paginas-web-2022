@@ -15,194 +15,246 @@
         <h1><img src="hp-recipe-icon.png" alt="Frigideira fritando um ovo"></h1>
         <h2>Receitas da Bruna</h2>
       </div>
+      
       <div class="menu">
           <ul>
-            <li><button onclick="selecionarCategoria()" class="button-padrao">Todos</button></li>
-            <li><button onclick="selecionarCategoria()" class="button-teste">Bolos</button></li>
-            <li><button onclick="selecionarCategoria()" class="button-padrao">Tortas</button></li>
-            <li><button onclick="selecionarCategoria()" class="button-padrao">Empadas</button></li>
-            <li><button onclick="selecionarCategoria()" class="button-padrao">Doces</button></li>
-            <li><button onclick="selecionarCategoria()" class="button-padrao">Bebidas</button></li>
+            <li><button onclick="selecionarCategoria(this, 'todos')" class="button-padrao">Todos</button></li>
+            <li><button onclick="selecionarCategoria(this, 'bolos')" class="button-padrao">Bolos</button></li>
+            <li><button onclick="selecionarCategoria(this, 'tortas')" class="button-padrao">Tortas</button></li>
+            <li><button onclick="selecionarCategoria(this, 'empadas')" class="button-padrao">Empadas</button></li>
+            <li><button onclick="selecionarCategoria(this, 'doces')" class="button-padrao">Doces</button></li>
+            <li><button onclick="selecionarCategoria(this, 'bebidas')" class="button-padrao">Bebidas</button></li>
           </ul>
       </div>
     </header>
     <main>
       <ul class="receitas">
         <li>
-          <img class="foto-receita" src="imagens/bebidas-chocolate-quente.jpg" alt="Chocolate quente com marshmallow">
-          <h3 class="nome-receita">Chocolate quente com marshmallow.</h3>
-          <h4 class="categoria">Bebidas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+            <div data-categoria=doces>
+              <img class="foto-receita" src="imagens/doce-banoffee.jpg" alt="Banoffee">
+              <h3>Banoffee.</h3>
+              <h4>Doces.</h4>
+              <button tabindex="0" class="favorito"></button>
+            </div>
+          </li>
+
+        <li>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-brigadeiro-churros.jpg" alt="Brigadeiro de churros">
+            <h3>Brigadeiro de churros.</h3>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
+        </li>
+
+        <li>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-churros.jpg" alt="Churros">
+            <h3>Churros</h3>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
+        </li>
+        
+        <li>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-donut-oreo.jpg" alt="Donuts de oreo">
+            <h3>Donuts de oreo.</h3>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
+        </li>
+       
+        <li>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-donut-red.jpg" alt="Donuts de red velvet">
+            <h3>Donuts de red velvet.</h3>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
+        </li>
+        
+        <li>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-macarons.jpg" alt="Macarons">
+            <h3>Macarons</p>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
+        </li>
+        
+        <li>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-pudim.jpg" alt="Pudim">
+            <h3>Pudim.</h3>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
         <li>
-          <img class="foto-receita" src="imagens/bolo-amendoim-avela.jpg" alt="Bolo de amendoim e avelã">
-          <h3 class="nome-receita">Bolo de amendoim e avelã.</h3>
-          <h4 class="categoria">Bolos</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=doces>
+            <img class="foto-receita" src="imagens/doce-tiramisu.jpg" alt="Tiramisù">
+            <h3>Tiramisù.</h3>
+            <h4>Doces</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
         <li>
-          <img class="foto-receita" src="imagens/doce-banoffee.jpg" alt="Banoffee">
-          <h3 class="nome-receita">Banoffee.</h3>
-          <h4 class="categoria">Doces.</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bolos>
+            <img class="foto-receita" src="imagens/bolo-amendoim-avela.jpg" alt="Bolo de amendoim e avelã">
+            <h3>Bolo de amendoim e avelã.</h3>
+            <h4>Bolos</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/empadao-carne-moida.jpg" alt="Empadão de carne moída">
-          <h3 class="nome-receita">Empadão de carne moída.</h3>
-          <h4 class="categoria">Empadas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bolos>
+            <img class="foto-receita" src="imagens/bolo-brigadeiro.jpg" alt="Bolo de chocolate com recheio de brigadeiro">
+            <h3>Bolo de chocolate com recheio de brigadeiro.</h3>
+            <h4>Bolos</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/torta-calabresa.jpg" alt="Torta de calabresa">
-          <h3 class="nome-receita">Torta de calabresa.</h3>
-          <h4 class="categoria">Tortas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bolos>
+            <img class="foto-receita" src="imagens/bolo-maracuja.jpg" alt="Bolo de chocolate com recheio de mousse de maracujá">
+            <h3>Bolo de chocolate com recheio de mousse de maracujá.</h3>
+            <h4>Bolos</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/bebidas-limonada-pitaya.jpg" alt="Limonada com Pitaya">
-          <h3 class="nome-receita">Limonada com Pitaya.</h3>
-          <h4 class="categoria">Bebidas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bolos>
+            <img class="foto-receita" src="imagens/bolo-ninho.jpg" alt="Bolo de baunilha com cobertura de Ninho">
+            <h3>Bolo de baunilha com cobertura de Ninho.</h3>
+            <h4>Bolos</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/bolo-brigadeiro.jpg" alt="Bolo de chocolate com recheio de brigadeiro">
-          <h3 class="nome-receita">Bolo de chocolate com recheio de brigadeiro.</h3>
-          <h4 class="categoria">Bolos</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bolos>
+            <img class="foto-receita" src="imagens/bolo-prestigio.png" alt="Naked cake de prestígio">
+            <h3>Naked cake de prestígio.</h3>
+            <h4>Bolos</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/doce-brigadeiro-churros.jpg" alt="Brigadeiro de churros">
-          <h3 class="nome-receita">Brigadeiro de churros.</h3>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bolos>
+            <img class="foto-receita" src="imagens/bolo-red-velvet.jpg" alt="Bolo red velvet">
+            <h3>Bolo red velvet.</h3>
+            <h4>Bolos</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+        
         <li>
-          <img class="foto-receita" src="imagens/empadao-frango.jpg" alt="Empadão de frango">
-          <h3 class="nome-receita">Empadão de frango.</h3>
-          <h4 class="categoria">Empadas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=empadas>     
+            <img class="foto-receita" src="imagens/empadao-carne-moida.jpg" alt="Empadão de carne moída">
+            <h3>Empadão de carne moída.</h3>
+            <h4>Empadas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/torta-maca.jpg" alt="Torta de maçã">
-          <h3 class="nome-receita">Torta de maçã.</h3>
-          <h4 class="categoria">Tortas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=empadas>     
+            <img class="foto-receita" src="imagens/empadao-frango.jpg" alt="Empadão de frango">
+            <h3>Empadão de frango.</h3>
+            <h4>Empadas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/bebidas-limonada.jpg" alt="Limonada">
-          <h3 class="nome-receita">Limonada.</h3>
-          <h4 class="categoria">Bebidas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=tortas>
+            <img class="foto-receita" src="imagens/torta-calabresa.jpg" alt="Torta de calabresa">
+            <h3>Torta de calabresa.</h3>
+            <h4>Tortas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+        
         <li>
-          <img class="foto-receita" src="imagens/bolo-maracuja.jpg" alt="Bolo de chocolate com recheio de mousse de maracujá">
-          <h3 class="nome-receita">Bolo de chocolate com recheio de mousse de maracujá.</h3>
-          <h4 class="categoria">Bolos</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+     
+          <div data-categoria=tortas>
+            <img class="foto-receita" src="imagens/torta-maca.jpg" alt="Torta de maçã">
+            <h3>Torta de maçã.</h3>
+            <h4>Tortas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+        
+        </li>
+        
         <li>
-          <img class="foto-receita" src="imagens/doce-churros.jpg" alt="Churros">
-          <h3 class="nome-receita">Churros</h3>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=tortas>
+            <img class="foto-receita" src="imagens/torta-portuguesa.jpg" alt="Torta portuguesa">
+            <h3>Torta portuguesa.</h3>
+            <h4>Tortas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/torta-portuguesa.jpg" alt="Torta portuguesa">
-          <h3 class="nome-receita">Torta portuguesa.</h3>
-          <h4 class="categoria">Tortas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bebidas>
+            <img class="foto-receita" src="imagens/bebidas-chocolate-quente.jpg" alt="Chocolate quente com marshmallow">
+            <h3>Chocolate quente com marshmallow.</h3>
+            <h4>Bebidas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/bebidas-refrigerante.jpg" alt="Refrigerante">
-          <h3 class="nome-receita">Refrigerante.</h3>
-          <h4 class="categoria">Bebidas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
+          <div data-categoria=bebidas>
+            <img class="foto-receita" src="imagens/bebidas-limonada-pitaya.jpg" alt="Limonada com Pitaya">
+            <h3>Limonada com Pitaya.</h3>
+            <h4>Bebidas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
         </li>
+
         <li>
-          <img class="foto-receita" src="imagens/bolo-ninho.jpg" alt="Bolo de baunilha com cobertura de Ninho">
-          <h3 class="nome-receita">Bolo de baunilha com cobertura de Ninho.</h3>
-          <h4 class="categoria">Bolos</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/doce-donut-oreo.jpg" alt="Donuts de oreo">
-          <h3 class="nome-receita">Donuts de oreo.</h3>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/bebidas-suco-laranja.jpg" alt="Suco de laranja">
-          <h3 class="nome-receita">Suco de laranja.</h3>
-          <h4 class="categoria">Bebidas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/bolo-prestigio.png" alt="Naked cake de prestígio">
-          <h3 class="nome-receita">Naked cake de prestígio.</h3>
-          <h4 class="categoria">Bolos</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/doce-donut-red.jpg" alt="Donuts de red velvet">
-          <h3 class="nome-receita">Donuts de red velvet.</h3>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/bebidas-suco-morango.jpg" alt="Suco de morango">
-          <h3 class="nome-receita">Suco de morango.</h3>
-          <h4 class="categoria">Bebidas</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/doce-macarons.jpg" alt="Macarons">
-          <h3 class="nome-receita">Macarons</p>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/bolo-red-velvet.jpg" alt="Bolo red velvet">
-          <h3 class="nome-receita">Bolo red velvet.</h3>
-          <h4 class="categoria">Bolos</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/doce-pudim.jpg" alt="Pudim">
-          <h3 class="nome-receita">Pudim.</h3>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
-        <li>
-          <img class="foto-receita" src="imagens/doce-tiramisu.jpg" alt="Tiramisù">
-          <h3 class="nome-receita">Tiramisù.</h3>
-          <h4 class="categoria">Doces</h4>
-          <!--<img id="coracao" class="coracao-sem-preenchimento" src="imagens/coracao.png">-->
-          <button tabindex="0" class="favorito"></button>
-        </li>
+          <div data-categoria=bebidas>
+            <img class="foto-receita" src="imagens/bebidas-limonada.jpg" alt="Limonada">
+            <h3>Limonada.</h3>
+            <h4>Bebidas</h4>
+            <button tabindex="0" class="favorito"></button>
+          </div>
+
+          <li>
+            <div data-categoria=bebidas>
+              <img class="foto-receita" src="imagens/bebidas-refrigerante.jpg" alt="Refrigerante">
+              <h3>Refrigerante.</h3>
+              <h4>Bebidas</h4>
+              <button tabindex="0" class="favorito"></button>
+            </div>
+          </li>
+
+          <li>
+            <div data-categoria=bebidas>
+              <img class="foto-receita" src="imagens/bebidas-suco-laranja.jpg" alt="Suco de laranja">
+              <h3>Suco de laranja.</h3>
+              <h4>Bebidas</h4>
+              <button tabindex="0" class="favorito"></button>
+            </div>
+          </li>
+
+          <li>
+            <div data-categoria=bebidas>
+              <img class="foto-receita" src="imagens/bebidas-suco-morango.jpg" alt="Suco de morango">
+              <h3>Suco de morango.</h3>
+              <h4>Bebidas</h4>
+              <button tabindex="0" class="favorito"></button>
+            </div>
+          </li>
+
+          
       </ul>
     </main>
     <script src="main.js"></script>

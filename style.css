@@ -39,10 +39,13 @@ header{
     color: black; 
     font-size: 18px; 
     padding: 7px 13px;
+    border: none;
 }
 
 .button-teste{
-    background-color:red;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
     color: black; 
     font-size: 18px; 
     padding: 7px 13px;
@@ -80,7 +83,7 @@ body, main{
 }
 
 .favorito::before{
-    margin-left: 20px;
+    margin-left: 0px;
     padding: 5px;
     content: '🤍' ;
     font-size: 1.2em;
@@ -89,4 +92,8 @@ body, main{
 
 .clicado::before {
     content: '💜';
+}
+
+.hide{
+    display:none;  
 }
