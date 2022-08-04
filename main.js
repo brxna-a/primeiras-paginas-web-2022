@@ -1,13 +1,13 @@
 const listaBotoesFavoritos = document.querySelectorAll('.favorito')
-for (let contador = 0; contador < listaBotoesFavoritos.lenght; contador++){
+for (let contador = 0; contador < listaBotoesFavoritos.length; contador++){
     const botaoFavorito = listaBotoesFavoritos[contador]
 
     botaoFavorito.onclick = () => {
-        if(botaoFavorito.classlist[1] === 'clicado'){
-            botaoFavorito.classlist.remove('clicado');
+        if(botaoFavorito.classList[1] === 'clicado'){
+            botaoFavorito.classList.remove('clicado');
         }
         else{
-            botaoFavorito.classlist.add('clicado');
+            botaoFavorito.classList.add('clicado');
         }
     }
 }

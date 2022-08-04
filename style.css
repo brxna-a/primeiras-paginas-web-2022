@@ -73,27 +73,12 @@ body, main{
     padding: 5px;
 }
 
-/*
-
-
-#coracao{
-    display: relative;
-    padding-left: 250px;
-    padding-bottom: 10px;
-    width: 20px;
-}
-
-#coracao:hover{
-    cursor: pointer;
-}
-*/
-
-
 .favorito::before{
     margin-left: 20px;
     padding: 5px;
     content: '🤍' ;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .clicado::before {
