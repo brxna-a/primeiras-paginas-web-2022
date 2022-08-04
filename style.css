@@ -1,5 +1,3 @@
-
-
 /*cabeçalho com a logo e o título*/
 header{
     position: sticky;
@@ -96,4 +94,19 @@ body, main{
 
 .hide{
     display:none;  
+}
+
+@media screen and (max-width:480px){
+    .receitas{
+        display: block;
+        width: 300px;
+    }
+
+    .receitas div{
+        margin: 15px;
+    }
+
+    header{
+        width: 400px;
+    }
 }
