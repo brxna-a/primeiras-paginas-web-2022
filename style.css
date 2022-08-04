@@ -34,9 +34,15 @@ header{
     text-align: center;
 } 
  
-.menu button{
+.button-padrao{
     background-color:#BA55D3;
-    border: none;
+    color: black; 
+    font-size: 18px; 
+    padding: 7px 13px;
+}
+
+.button-teste{
+    background-color:red;
     color: black; 
     font-size: 18px; 
     padding: 7px 13px;

@@ -11,3 +11,7 @@ for (let contador = 0; contador < listaBotoesFavoritos.length; contador++){
         }
     }
 }
+
+    function selecionarCategoria(){
+        alert('teste');
+    }
