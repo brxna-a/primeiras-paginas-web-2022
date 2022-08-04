@@ -1,6 +1,4 @@
-body{
-    height: 5000px;
-}
+
 
 /*cabeçalho com a logo e o título*/
 header{
@@ -75,6 +73,9 @@ body, main{
     padding: 5px;
 }
 
+/*
+
+
 #coracao{
     display: relative;
     padding-left: 250px;
@@ -84,4 +85,17 @@ body, main{
 
 #coracao:hover{
     cursor: pointer;
+}
+*/
+
+
+.favorito::before{
+    margin-left: 20px;
+    padding: 5px;
+    content: '🤍' ;
+    font-size: 1.2em;
+}
+
+.clicado::before {
+    content: '💜';
 }
